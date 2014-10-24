@@ -38,7 +38,7 @@ class CookieChoice {
 	 *
 	 * @var      string
 	 */
-	protected $plugin_slug = 'cookiechoice';
+	protected $plugin_slug = 'wp-cookiechoise';
 
 	/**
 	 * Instance of this class.

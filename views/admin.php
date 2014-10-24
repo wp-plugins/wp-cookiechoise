@@ -5,7 +5,7 @@
  * This includes the header, options, and other information that should provide
  * The User Interface to the end user.
  *
- * @package   PluginName
+ * @package   Wp-CookieChoice
  * @author    Your Name <email@example.com>
  * @license   GPL-2.0+
  * @link      http://example.com
@@ -130,13 +130,13 @@
 					<li>
 					
 						<h3>Fixed on top </h3>
-						<img src="<?php echo plugins_url( '/wp_cookiechoice/assets/top.jpg' ); ?>" width="150" height="100" /><br />
+						<img src="<?php echo plugins_url( '/wp-cookiechoise/assets/top.jpg' ); ?>" width="150" height="100" /><br />
 						<input type="radio" checked="checked" name="cookiechoice_integration" value="top" />
     
 					</li>
 					<li>
 						<h3>Popup solution</h3>
-						<img src="<?php echo plugins_url( '/wp_cookiechoice/assets/popup.jpg' ); ?>" width="150" height="100" /><br />
+						<img src="<?php echo plugins_url( '/wp-cookiechoise/assets/popup.jpg' ); ?>" width="150" height="100" /><br />
 						<input type="radio" name="cookiechoice_integration" value="popup" />
 				
 					</li>
@@ -151,12 +151,12 @@
 				<ul>
 					<li>
 						<h3>Fixed on top </h3>
-						<img src="<?php echo plugins_url( '/wp_cookiechoice/assets/top.jpg' ); ?>" width="150" height="100" /><br />
+						<img src="<?php echo plugins_url( '/wp-cookiechoise/assets/top.jpg' ); ?>" width="150" height="100" /><br />
 						<input type="radio" name="cookiechoice_integration" value="top" />
 					</li>
 					<li>
 						<h3>Popup solution</h3>
-						<img src="<?php echo plugins_url( 'assets/popup.png', __FILE__ ); ?>" width="150" height="100" /><br />	
+						<img src="<?php echo plugins_url( '/wp-cookiechoise/popup.png', __FILE__ ); ?>" width="150" height="100" /><br />	
 						<input type="radio" checked="checked" name="cookiechoice_integration" value="popup" />
 					</li>
 				</ul>	
