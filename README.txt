@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-The plugin uses the google Cookiechoice.de guideline and javascript library.
+The plugin uses the google Cookiechoice.org guideline and javascript library.
 Its handle the integration easy for all wordpress users.
 
 == Installation ==
