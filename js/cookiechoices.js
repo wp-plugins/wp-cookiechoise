@@ -21,6 +21,9 @@
   }
 
   var document = window.document;
+  
+
+  
   // IE8 does not support textContent, so we should fallback to innerText.
   var supportsTextContent = 'textContent' in document.body;
 
@@ -152,7 +155,7 @@
       // Set the cookie expiry to one year after today.
       var expiryDate = new Date();
       expiryDate.setFullYear(expiryDate.getFullYear() + 1);
-      document.cookie = cookieName + '=y; expires=' + expiryDate.toGMTString();
+      document.cookie = cookieName + '=y; expires=' + expiryDate.toGMTString() + ";domain=" + document.domain + ";path=/";
     }
 
     function _shouldDisplayConsent() {

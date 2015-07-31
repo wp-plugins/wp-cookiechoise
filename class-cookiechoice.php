@@ -107,7 +107,7 @@ class CookieChoice {
 				?>
 				<script>
 				  document.addEventListener('DOMContentLoaded', function(event) {
-					cookieChoices.showCookieConsentBar('<?php esc_html_e($cookieChoice['message']); ?>','<?php esc_html_e($cookieChoice['close']); ?>', '<?php esc_html_e($cookieChoice['more']); ?>', '<?php echo $cookieChoice['url']; ?>');
+					cookieChoices.showCookieConsentBar('<?php echo esc_html_e($cookieChoice['message']); ?>','<?php esc_html_e($cookieChoice['close']); ?>', '<?php esc_html_e($cookieChoice['more']); ?>', '<?php echo $cookieChoice['url']; ?>');
 				  });
 				</script>
 				<?php 
@@ -166,15 +166,19 @@ class CookieChoice {
 	 * @since    1.0.0
 	 */
 	public function add_plugin_admin_menu() {
-
-		$this->plugin_screen_hook_suffix = add_plugins_page(
-			__( 'WP Cookie Choice', $this->plugin_slug ),
-			__( 'CookieChoice', $this->plugin_slug ),
-			'read',
-			$this->plugin_slug,
-			array( $this, 'display_cookiechoice_admin_page' )
-		);
-
+		
+		//if( current_user_can( "manage_options" ) ) {
+		
+			$this->plugin_screen_hook_suffix = add_options_page(
+				__( 'WP Cookie Choice', $this->plugin_slug ),
+				__( 'CookieChoice', $this->plugin_slug ),
+				'manage_options',
+				$this->plugin_slug,
+				array( $this, 'display_cookiechoice_admin_page' )
+			);
+		
+		//}
+		
 	}
 
 	/**

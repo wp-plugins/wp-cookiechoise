@@ -48,8 +48,8 @@
 	}
 
 	if(isset($_POST['cookiechoice_message'])){
-	
-		$cookieChoice['message'] = sanitize_text_field($_POST['cookiechoice_message']);
+
+		$cookieChoice['message'] = esc_html($_POST['cookiechoice_message']);
 	
 	} else {
 	
@@ -149,14 +149,14 @@
 				?>
 				
 				<ul>
-					<li>
+					<li style="display:inline-block;">
 						<h3>Fixed on top </h3>
 						<img src="<?php echo plugins_url( '/wp-cookiechoise/assets/top.jpg' ); ?>" width="150" height="100" /><br />
 						<input type="radio" name="cookiechoice_integration" value="top" />
 					</li>
-					<li>
+					<li style="display:inline-block;">
 						<h3>Popup solution</h3>
-						<img src="<?php echo plugins_url( '/wp-cookiechoise/popup.png', __FILE__ ); ?>" width="150" height="100" /><br />	
+						<img src="<?php echo plugins_url( '/wp-cookiechoise/assets/popup.jpg' ); ?>" width="150" height="100" /><br />	
 						<input type="radio" checked="checked" name="cookiechoice_integration" value="popup" />
 					</li>
 				</ul>	

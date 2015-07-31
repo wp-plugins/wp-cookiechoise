@@ -3,8 +3,8 @@ Contributors: smoo1337
 Donate link: http://conversion-junkies.de
 Tags: cookies, privacy
 Requires at least: 3.5.1
-Tested up to: 4.0
-Stable tag: 1.0.0
+Tested up to: 4.3.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The plugin uses the google Cookiechoice.org guideline and javascript library.
 Its handle the integration easy for all wordpress users.
+
+*** Rating***
+Please let us know when you have problems - befor you rate the plugin.
+If the plugin helps you. feel free to rate it with 5 stars.
+
+***NO WARRANTY***
+We change the original cookiechoice.js 
+The cookie was set to the page not to the domain.
+Now we set the cookie domain wide.
 
 == Installation ==
 
@@ -32,6 +41,10 @@ e.g.
 
 
 == Changelog ==
+
+= 1.0 =
+* domainwide cookie
+* Setting only for admins
 
 = 1.0 =
 * first version starts
