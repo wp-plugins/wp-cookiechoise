@@ -15,7 +15,7 @@
  * Plugin Name: Wp Cookie Choice
  * Plugin URI:  http://www.conversion-junkies.de
  * Description: Integrate the www.cookiechoices.org scripts for Wordpress
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      Marcus Franke
  * Author URI:  http://www.conversion-junkies.de
  * Text Domain: wp_cookiechoice
